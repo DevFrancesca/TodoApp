@@ -1,0 +1,88 @@
+.signupCon{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.signupLeft{
+    width: 30%;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,68,0.9248074229691877) 0%, rgba(0,212,255,1) 75%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signupRight{
+    width: 70%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.sRightWrapper{
+    width: 85%;
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sRightTop{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.sForm{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.formInputs{
+    width: 100%;
+    height: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formInputs > input{
+    width: 45%;
+    height: 70%;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+}
+.checkCon{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    gap: 5px;
+}
+.formButton{
+    width: 100%;
+    height: 15%;
+    background-color: purple;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.sRightBottom{
+    width: 100%;
+    height: 20%;
+    /* background-color: blue; */
+}
