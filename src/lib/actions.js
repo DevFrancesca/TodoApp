@@ -21,7 +21,7 @@ export async function createUser(prevState, formData) {
         const user = new userModel(data)
         await user.save()
         // revalidatePath('/')
-        return { message: `Created user ${data.firstName}` }
+        return { message: `User Created ${data.firstName}` }
     } catch (e) {
         return { message: 'Failed to create user' }
     }

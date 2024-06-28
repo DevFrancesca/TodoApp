@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from "./signup.module.css"
 import {useFormState, useFormStatus} from 'react-dom'
 import { useEffect } from 'react'
@@ -8,10 +8,11 @@ import { createUser } from '@/lib/actions'
 const Signup = () => {
     const [state, formAction] = useFormState(createUser, {message: '',})
     const {pending} = useFormStatus();
+    const [isLoading, setIsLoading] = useState(false)
 
     const ref = useRef(null)
     useEffect(() =>{
-        if (state.message.indexOf('Created user') === 0) {
+        if (state.message.indexOf('User Created') === 0) {
             ref.current?.reset()
             console.log(state.message)
         } else if (state.message) {
@@ -21,7 +22,7 @@ const Signup = () => {
   return (
     <div className={styles.signupCon}>
       <div className={styles.signupLeft}>
-        <h2>Welcome to Elevate</h2>
+        <h2>Welcome to <span>Chesa's</span></h2>
       </div>
       <div className={styles.signupRight}>
         <div className={styles.sRightWrapper}>
@@ -50,10 +51,11 @@ const Signup = () => {
                     <input type='checkbox'/>
                     <p>I agree to the terms and conditions</p>
                 </div>
-                <button type='submit' disabled={pending} className={styles.formButton}>{pending? "signing up..." : "Sign up"}</button>
+                <button type='submit' className={styles.formButton}>Sign up</button>
+                {/* <div className={styles.loader}></div> */}
             </form>
             <div className={styles.sRightBottom}>
-                <div></div>
+                <div ></div>
             </div>
         </div>
       </div>
