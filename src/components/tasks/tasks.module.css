@@ -1,7 +1,7 @@
 .tasksCon{
     width: 20%;
     height: 100%;
-    background: rgba(23, 22, 22, 0.834);
+    background: #0E0C0A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +32,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    /* background-color: red; */
 }
 .myLists{
     color: white;
@@ -43,16 +44,19 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* background-color: aqua; */
 }
 .taskList{
-    width: 100%;
-    background-color: yellow;
+    padding: 15px;
+    background-color: rgb(255, 255, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 5px;
+}
+.taskList > p{
+    font-weight: 500;
 }
 .middleLine{
     width: 2px;
@@ -60,7 +64,7 @@
     background-color: darkblue;
 }
 .newList{
-    color: white;
+    color:grey;
     cursor: pointer;
     padding-left: 15px;
 }
