@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import styles from "./todoApp.module.css"
 import Calendar from '@/components/calender/page'
