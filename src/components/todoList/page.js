@@ -15,7 +15,24 @@ const TodoList = () => {
             <h3 className={styles.question}>What's your plan for today?</h3>
           </div>
         </article>
-        <div className={styles.todoBottom}></div>
+
+        <div className={styles.todoBottom}>
+          <article className={styles.addTodo}>
+            <p>Add Todo</p>
+          </article>
+          <section className={styles.checkedTodo}>
+            <div className={styles.checkedTodoLeft}>
+              <input type='check'/>
+              <article className={styles.todoActivity}>
+                <p className={styles.activityDate}>10-07-2024</p>
+                <p className={styles.activities}>Go to gym</p>
+              </article>
+            </div>
+            <div className={styles.checkedTodoRight}>
+              <p>#reminder</p>
+            </div>
+          </section>
+        </div>
       </section>
     </div>
   )

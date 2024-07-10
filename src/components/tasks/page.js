@@ -13,7 +13,7 @@ const Tasks = () => {
       <div className={styles.tasksWrapper}>
         <section className={styles.iconText}>
             <img src="./lightening.svg" alt='icon'/>
-            <h2 className={styles.chesaTodo}>ChesaTodo</h2>
+            <h2 className={styles.chesaTodo}>ChescaTodo</h2>
         </section>
         <section className={styles.myListsCon}>
             <h4 className={styles.myLists}>My Lists</h4>
