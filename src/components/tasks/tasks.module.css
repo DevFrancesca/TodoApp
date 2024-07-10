@@ -21,6 +21,11 @@
     align-items: center;
     gap: 10px;
 }
+.iconText > img{
+    width: 30px;
+    height:30px;
+    object-fit: contain;
+}
 .chesaTodo{
     color: white;
     font-weight: 600;
@@ -68,8 +73,10 @@
     height: 70%;
     background-color: darkblue;
 }
+
 .inactive{
     color: rgb(168, 166, 166);
+    cursor: pointer;
 }
 .newList{
     color:grey;
