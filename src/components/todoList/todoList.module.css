@@ -1,5 +1,58 @@
 .todoListCon{
     width: 50%;
     height: 100%;
-    /* background: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todoWrapper{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.todoTop{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todoTopLeft{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 3px;
+}
+.todoTopLeft > h4{
+    color: white;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.todoTopRight{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.greeting{
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.question{
+    color: rgb(168, 166, 166);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.todoBottom{
+    width: 95%;
+    height: 85%;
+    background-color: blue;
 }
